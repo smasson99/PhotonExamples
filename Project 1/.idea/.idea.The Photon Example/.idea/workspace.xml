@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a8f082c-cc26-48c5-a64f-95d5627b2712" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/Callbacks/SceneManager_PhotonCallBacks.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2781">
+              <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+              <folding>
+                <marker date="1559856490171" expanded="false" signature="6:108" ph="..." />
+                <marker date="1559856490171" expanded="true" signature="179:2842" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="979:1024" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="1066:1359" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="1117:1216" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="1253:1353" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="1396:1588" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="1626:1819" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="1863:1931" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="1980:2051" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="2078:2165" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="2213:2533" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="2245:2527" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="2324:2429" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="2562:2609" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="2648:2709" ph="{...}" />
+                <marker date="1559856490171" expanded="true" signature="2750:2840" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/ClickEventChannelButton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding>
+                <marker date="1559855861199" expanded="false" signature="6:107" ph="..." />
+                <marker date="1559855861199" expanded="true" signature="192:882" ph="{...}" />
+                <marker date="1559855861199" expanded="true" signature="340:414" ph="{...}" />
+                <marker date="1559855861199" expanded="true" signature="458:511" ph="{...}" />
+                <marker date="1559855861199" expanded="true" signature="558:680" ph="{...}" />
+                <marker date="1559855861199" expanded="true" signature="592:674" ph="{...}" />
+                <marker date="1559855861199" expanded="true" signature="724:775" ph="{...}" />
+                <marker date="1559855861199" expanded="true" signature="843:880" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/JoinRoomButton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="38" selection-start-column="38" selection-end-column="38" />
+              <folding>
+                <marker date="1559855717731" expanded="true" signature="53:57" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/LeaveRoomButton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/EventChannel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <marker date="1559853419044" expanded="false" signature="6:32" ph="..." />
+                <marker date="1559853419044" expanded="true" signature="57:258" ph="{...}" />
+                <marker date="1559853419044" expanded="true" signature="117:256" ph="{...}" />
+                <marker date="1559853419044" expanded="true" signature="195:250" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnJoinRoomButtonClicked.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <marker date="1559853531376" expanded="true" signature="202:206" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnLeaveRoomButtonClicked.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <marker date="1559855336869" expanded="true" signature="205:209" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/Callbacks/SceneManager_PhotonCallBacks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/ClickEventChannelButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnLeaveRoomButtonClicked.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/JoinRoomButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Scripts/ToDemoHubButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/EventChannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Scripts/DemoHubManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/LeaveRoomButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ThirdParty/PunCockpitEmbed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnJoinRoomButtonClicked.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ThirdParty/PunCockpitEmbed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Scripts/DemoHubManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Scripts/ToDemoHubButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EventChannels/EventChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnJoinRoomButtonClicked.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnLeaveRoomButtonClicked.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/JoinRoomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/LeaveRoomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/ClickEventChannelButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhotonScripts/Callbacks/SceneManager_PhotonCallBacks.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="512" />
+    <option name="y" value="-19" />
+    <option name="width" value="1449" />
+    <option name="height" value="972" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a8f082c-cc26-48c5-a64f-95d5627b2712" name="Default Changelist" comment="" />
+      <created>1559852436739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559852436739</updated>
+      <workItem from="1559852440686" duration="4064000" />
+      <workItem from="1559856578869" duration="130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4194000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25198728" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+          <folding>
+            <marker date="1559852560328" expanded="true" signature="0:510" ph="/*  Used in &quot;PUN Basic tutorial&quot; to handle typical game management requirements ... */" />
+            <marker date="1559852560328" expanded="false" signature="518:589" ph="..." />
+            <marker date="1559852560328" expanded="true" signature="626:4672" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="660:880" ph="/// Game manager. ... " />
+            <marker date="1559852560328" expanded="true" signature="934:4669" ph="{...}" />
+            <marker date="1559852560328" expanded="false" signature="944:1018" ph="Public Fields" />
+            <marker date="1559852560328" expanded="false" signature="1022:1230" ph="Private Fields" />
+            <marker date="1559852560328" expanded="true" signature="1240:2759" ph="MonoBehaviour CallBacks" />
+            <marker date="1559852560328" expanded="true" signature="1281:1409" ph="/// MonoBehaviour method called on GameObject by Unity during initialization phase. ... " />
+            <marker date="1559852560328" expanded="true" signature="1430:2461" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="1587:1660" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="1691:1953" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="2011:2348" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="2465:2568" ph="/// MonoBehaviour method called on GameObject by Unity on every frame. ... " />
+            <marker date="1559852560328" expanded="true" signature="2584:2739" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="2702:2735" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="2769:4088" ph="Photon Callbacks" />
+            <marker date="1559852560328" expanded="true" signature="2803:2978" ph="/// Called when a Photon Player got connected. We need to then load a bigger scene. ... " />
+            <marker date="1559852560328" expanded="true" signature="3044:3351" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="3190:3347" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="3355:3511" ph="/// Called when a Photon Player got disconnected. We need to load a smaller scene. ... " />
+            <marker date="1559852560328" expanded="true" signature="3568:3861" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="3699:3857" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="3865:3981" ph="/// Called when the local player left the room. We need to load the launcher scene. ... " />
+            <marker date="1559852560328" expanded="true" signature="4017:4074" ph="{...}" />
+            <marker date="1559852560328" expanded="false" signature="4092:4257" ph="Public Methods" />
+            <marker date="1559852560328" expanded="true" signature="4141:4179" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="4212:4243" ph="{...}" />
+            <marker date="1559852560328" expanded="false" signature="4261:4665" ph="Private Methods" />
+            <marker date="1559852560328" expanded="true" signature="4304:4651" ph="{...}" />
+            <marker date="1559852560328" expanded="true" signature="4349:4456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ThirdParty/PunCockpitEmbed.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+          <folding>
+            <marker date="1559852560339" expanded="true" signature="0:538" ph="/*  Use this in scenes you want to leave Control for connection and pun related commands to Cockpit. ... */" />
+            <marker date="1559852560339" expanded="false" signature="546:654" ph="..." />
+            <marker date="1559852560339" expanded="true" signature="689:2746" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="696:975" ph="/// Use this in scenes you want to leave Control for connection and pun related commands to Cockpit. ... " />
+            <marker date="1559852560339" expanded="true" signature="1036:2742" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="1301:1442" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="1353:1432" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="1510:2223" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="1893:2101" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="1997:2087" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="2118:2184" ph="{...}" />
+            <marker date="1559852560339" expanded="false" signature="2233:2731" ph="MonoBehaviourPunCallbacks implementation" />
+            <marker date="1559852560339" expanded="true" signature="2326:2712" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="2426:2505" ph="{...}" />
+            <marker date="1559852560339" expanded="true" signature="2551:2702" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Scripts/ToDemoHubButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1018">
+          <caret line="88" column="24" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+          <folding>
+            <marker date="1559852560317" expanded="true" signature="0:517" ph="/*  Present a button on all launched demos from hub to allow getting back to the demo hub. ... */" />
+            <marker date="1559852560317" expanded="false" signature="525:604" ph="..." />
+            <marker date="1559852560317" expanded="true" signature="635:2161" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="639:760" ph="/// Present a button on all launched demos from hub to allow getting back to the demo hub. ... " />
+            <marker date="1559852560317" expanded="true" signature="806:2159" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="925:1149" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="945:1142" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="991:1100" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="1175:1296" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="1233:1289" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="1358:1462" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="1495:2059" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="1835:1913" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="1966:2043" ph="{...}" />
+            <marker date="1559852560317" expanded="true" signature="2086:2155" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Scripts/DemoHubManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="251" column="42" lean-forward="true" selection-start-line="251" selection-start-column="42" selection-end-line="252" selection-end-column="72" />
+          <folding>
+            <marker date="1559852560301" expanded="true" signature="0:505" ph="/*  Used as starting point to let developer choose amongst all demos available. ... */" />
+            <marker date="1559852560301" expanded="false" signature="513:649" ph="..." />
+            <marker date="1559852560301" expanded="true" signature="680:8836" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="728:8834" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="1031:1174" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="1328:7533" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="1561:1894" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="1958:2324" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="2395:2692" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="2759:3264" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="3338:3700" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="3771:4110" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="4168:4541" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="4606:5021" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="5092:5550" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="5610:5776" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="5844:6228" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="6295:6526" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="6589:6742" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="6805:6916" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="6984:7274" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="7340:7517" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="7577:8005" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="8032:8250" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="8083:8187" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="8284:8506" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="8335:8436" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="8535:8749" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="8586:8687" ph="{...}" />
+            <marker date="1559852560301" expanded="true" signature="8782:8831" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/ClickEventChannelButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <marker date="1559855861199" expanded="false" signature="6:107" ph="..." />
+            <marker date="1559855861199" expanded="true" signature="192:882" ph="{...}" />
+            <marker date="1559855861199" expanded="true" signature="340:414" ph="{...}" />
+            <marker date="1559855861199" expanded="true" signature="458:511" ph="{...}" />
+            <marker date="1559855861199" expanded="true" signature="558:680" ph="{...}" />
+            <marker date="1559855861199" expanded="true" signature="592:674" ph="{...}" />
+            <marker date="1559855861199" expanded="true" signature="724:775" ph="{...}" />
+            <marker date="1559855861199" expanded="true" signature="843:880" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/EventChannel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <marker date="1559853419044" expanded="false" signature="6:32" ph="..." />
+            <marker date="1559853419044" expanded="true" signature="57:258" ph="{...}" />
+            <marker date="1559853419044" expanded="true" signature="117:256" ph="{...}" />
+            <marker date="1559853419044" expanded="true" signature="195:250" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnJoinRoomButtonClicked.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <marker date="1559853531376" expanded="true" signature="202:206" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EventChannels/PhotonEvents/OnLeaveRoomButtonClicked.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <marker date="1559855336869" expanded="true" signature="205:209" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/JoinRoomButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+          <folding>
+            <marker date="1559855717731" expanded="true" signature="53:57" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/UI/LeaveRoomButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PhotonScripts/Callbacks/SceneManager_PhotonCallBacks.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2781">
+          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <folding>
+            <marker date="1559856490171" expanded="false" signature="6:108" ph="..." />
+            <marker date="1559856490171" expanded="true" signature="179:2842" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="979:1024" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="1066:1359" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="1117:1216" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="1253:1353" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="1396:1588" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="1626:1819" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="1863:1931" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="1980:2051" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="2078:2165" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="2213:2533" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="2245:2527" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="2324:2429" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="2562:2609" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="2648:2709" ph="{...}" />
+            <marker date="1559856490171" expanded="true" signature="2750:2840" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
