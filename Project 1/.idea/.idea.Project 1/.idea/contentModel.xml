@@ -412,13 +412,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="EventChannels" t="Include">
-            <e p="EventChannel.cs" t="Include" />
-            <e p="PhotonEvents" t="Include">
-              <e p="OnJoinRoomButtonClicked.cs" t="Include" />
-              <e p="OnLeaveRoomButtonClicked.cs" t="Include" />
-            </e>
-          </e>
           <e p="PhotonScripts" t="Include">
             <e p="Callbacks" t="Include">
               <e p="ChatRoomCallbacks.cs" t="Include" />
@@ -429,6 +422,28 @@
               <e p="JoinRoomButton.cs" t="Include" />
               <e p="LeaveRoomButton.cs" t="Include" />
             </e>
+          </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="EventChannels" t="Include">
+              <e p="EventChannel.cs" t="Include" />
+              <e p="PhotonEvents" t="Include">
+                <e p="OnJoinRoomButtonClicked.cs" t="Include" />
+                <e p="OnLeaveRoomButtonClicked.cs" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="OnFormErrorHappened.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Values" t="Include">
+              <e p="InputFieldValue.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="MainMenu" t="Include">
+              <e p="ErrorText.cs" t="Include" />
+              <e p="PseudonameInputField.cs" t="Include" />
+            </e>
+            <e p="ScriptableValueInputField.cs" t="Include" />
           </e>
         </e>
       </e>

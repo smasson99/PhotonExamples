@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 41baf07509a91804f8ed5588eda977f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - formErrorHappened: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

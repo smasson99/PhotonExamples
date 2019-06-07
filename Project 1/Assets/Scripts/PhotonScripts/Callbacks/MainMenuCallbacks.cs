@@ -8,7 +8,6 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
 {
     private const byte DefaultAmountOfPlayersPeerRoom = 5;
     private const string DefaultOnlineRoomName = "Room";
-    private const string DefaultOfflineRoomName = "Offline";
 
     public const byte DefaultMinAmountOfPlayers = 1;
     public const byte DefaultMaxAmountOfPlayers = 20;
@@ -19,9 +18,6 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
 
     [SerializeField]
     private string onlineRoomName = DefaultOnlineRoomName;
-
-    [SerializeField]
-    private string offlineRoomName = DefaultOfflineRoomName;
 
     [SerializeField]
     private OnJoinRoomButtonClicked onJoinRoomButtonClicked = null;
@@ -62,9 +58,14 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
 
     public void Connect()
     {
-        isConnecting = true;
+        Debug.Log(PhotonNetwork.IsConnectedAndReady);
         
-        PhotonNetwork.ConnectUsingSettings();
+        if (!isConnecting)
+        {
+            isConnecting = true;
+        
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
 
     public override void OnConnectedToMaster()
@@ -79,11 +80,6 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
 
             PhotonNetwork.JoinOrCreateRoom("ChatRoom", roomOptions, TypedLobby.Default);
         }
-    }
-
-    public override void OnLeftRoom()
-    {
-        SceneManager.LoadScene(offlineRoomName);
     }
 
     public override void OnJoinedRoom()

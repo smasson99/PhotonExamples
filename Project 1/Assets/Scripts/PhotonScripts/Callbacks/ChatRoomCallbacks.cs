@@ -13,6 +13,9 @@ public class ChatRoomCallbacks : MonoBehaviourPunCallbacks
     [SerializeField]
     private OnLeaveRoomButtonClicked onLeaveRoomButtonClicked = null;
 
+    [SerializeField]
+    private InputFieldValue pseudoNameValue;
+
     private void Awake()
     {
         VerifySerializeFields();
@@ -47,7 +50,7 @@ public class ChatRoomCallbacks : MonoBehaviourPunCallbacks
 
     public void LeaveRoom()
     {
-        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.Disconnect();
     }
 
     public override void OnLeftRoom()
