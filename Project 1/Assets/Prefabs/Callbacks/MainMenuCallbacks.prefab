@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6288137039137718483}
   - component: {fileID: 6288137039137718484}
   m_Layer: 0
-  m_Name: MainMenuToRoomCallbacks
+  m_Name: MainMenuCallbacks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,9 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmountOfPlayersPeerRoom: 5
-  onlineRoomName: Room
+  onlineRoomName: ChatRoom
   offlineRoomName: MainMenu
   onJoinRoomButtonClicked: {fileID: 11400000, guid: 8197851f470946d4dbc715b2fa430b04,
-    type: 2}
-  onLeaveRoomButtonClicked: {fileID: 11400000, guid: 4209a4faab4bc6c4780f536f3b433ae5,
     type: 2}

@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a56f2053ace381e468f94711ab657f71
   - enabled: 1
-    path: Assets/Scenes/Room.unity
+    path: Assets/Scenes/ChatRoom.unity
     guid: d033cb98a7652744c98655136b20b6f7
   m_configObjects: {}
