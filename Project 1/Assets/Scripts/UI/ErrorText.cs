@@ -6,13 +6,8 @@ using UnityEngine;
 
 public abstract class ErrorText : MonoBehaviour
 {
-    private const string DefaultTitleText = "Error!";
-    
     [SerializeField]
-    private OnFormErrorHappened formErrorHappened;
-
-    [SerializeField]
-    private string titleText = DefaultTitleText;
+    private OnFormErrorHappened formErrorHappened = null;
 
     protected TMP_Text text;
     
@@ -58,6 +53,6 @@ public abstract class ErrorText : MonoBehaviour
 
     private void OnFormErrorHappened()
     {
-        text.text = DefaultTitleText + "/n" + formErrorHappened.ErrorMessage;
+        text.text = formErrorHappened.ErrorMessage;
     }
 }
