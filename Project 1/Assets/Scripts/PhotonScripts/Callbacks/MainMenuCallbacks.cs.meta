@@ -4,10 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - onJoinRoomButtonClicked: {fileID: 11400000, guid: 8197851f470946d4dbc715b2fa430b04,
-      type: 2}
-  - onLeaveRoomButtonClicked: {fileID: 11400000, guid: 4209a4faab4bc6c4780f536f3b433ae5,
-      type: 2}
+  - onUserJoinsRoom: {fileID: 11400000, guid: ef7a5d1bca532c448847358104721228, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

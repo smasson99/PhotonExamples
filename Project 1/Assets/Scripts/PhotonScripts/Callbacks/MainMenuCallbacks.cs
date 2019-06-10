@@ -20,7 +20,7 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
     private string onlineRoomName = DefaultOnlineRoomName;
 
     [SerializeField]
-    private OnJoinRoomButtonClicked onJoinRoomButtonClicked = null;
+    private OnUserJoinsRoom onUserJoinsRoom = null;
 
     private bool isConnecting;
 
@@ -31,9 +31,9 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
 
     private void VerifySerializeFields()
     {
-        if (onJoinRoomButtonClicked is null)
+        if (onUserJoinsRoom is null)
         {
-            throw new NullReferenceException(nameof(onJoinRoomButtonClicked));
+            throw new NullReferenceException(nameof(onUserJoinsRoom));
         }
     }
 
@@ -41,17 +41,17 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
     {
         base.OnEnable();
 
-        onJoinRoomButtonClicked.OnPublished += OnJoinRoomButtonClicked;
+        onUserJoinsRoom.OnPublished += OnUserJoinsRoom;
     }
 
     public override void OnDisable()
     {
         base.OnDisable();
 
-        onJoinRoomButtonClicked.OnPublished -= OnJoinRoomButtonClicked;
+        onUserJoinsRoom.OnPublished -= OnUserJoinsRoom;
     }
 
-    private void OnJoinRoomButtonClicked()
+    private void OnUserJoinsRoom()
     {
         Connect();
     }
