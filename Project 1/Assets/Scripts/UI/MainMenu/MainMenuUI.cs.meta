@@ -4,13 +4,13 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - onMenuErrorHappened: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22,
-      type: 2}
+  - onMenuValidated: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22, type: 2}
   - userNameInputFieldValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea,
       type: 2}
   - onUserJoinsRoom: {fileID: 11400000, guid: ef7a5d1bca532c448847358104721228, type: 2}
   - onJoinRoomButtonClicked: {fileID: 11400000, guid: 8197851f470946d4dbc715b2fa430b04,
       type: 2}
+  - errorTitle: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

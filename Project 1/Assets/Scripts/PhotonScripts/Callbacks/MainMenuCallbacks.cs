@@ -58,8 +58,6 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
 
     public void Connect()
     {
-        Debug.Log(PhotonNetwork.IsConnectedAndReady);
-        
         if (!isConnecting)
         {
             isConnecting = true;

@@ -233,8 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bc2f886f2af0e489848e4aeeb095df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onMenuErrorHappened: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22,
-    type: 2}
+  onMenuValidated: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22, type: 2}
   userNameInputFieldValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea,
     type: 2}
   onUserJoinsRoom: {fileID: 11400000, guid: ef7a5d1bca532c448847358104721228, type: 2}
@@ -1329,7 +1328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a48d719d0a40eac4fb600ef7f8620247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  formErrorHappened: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22, type: 2}
+  formValidated: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22, type: 2}
 --- !u!114 &1617487028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1378,8 +1377,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1896,14 +1895,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
-  m_textAlignment: 258
+  m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1913,7 +1912,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0

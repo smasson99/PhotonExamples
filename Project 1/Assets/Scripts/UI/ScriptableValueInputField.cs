@@ -39,6 +39,11 @@ public abstract class ScriptableValueInputField : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        inputFieldValue.Value = "";
+    }
+
     protected virtual void OnEnable()
     {
         inputField.onValueChanged.AddListener(OnValueChanged);

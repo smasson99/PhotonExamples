@@ -6,7 +6,7 @@ public class MainMenuUI : MonoBehaviour
     private const string DefaultUserNameEmptyErrorMessage = "Username empty, please enter something.";
 
     [SerializeField]
-    private OnFormErrorHappened onMenuErrorHappened = null;
+    private OnFormValidated onMenuValidated = null;
 
     [SerializeField]
     private InputFieldValue userNameInputFieldValue = null;
@@ -30,9 +30,9 @@ public class MainMenuUI : MonoBehaviour
 
     private void VerifySerializeFields()
     {
-        if (onMenuErrorHappened is null)
+        if (onMenuValidated is null)
         {
-            throw new NullReferenceException(nameof(onMenuErrorHappened));
+            throw new NullReferenceException(nameof(onMenuValidated));
         }
 
         if (onUserJoinsRoom is null)
@@ -49,11 +49,17 @@ public class MainMenuUI : MonoBehaviour
     private void Start()
     {
         HideErrorTitle();
+        NotifyFormValidated();
     }
 
-    private void NotifyErrorHappened(string errorMessage)
+    private void NotifyFormError(string errorMessage)
     {
-        onMenuErrorHappened.Publish(errorMessage);
+        onMenuValidated.Publish(errorMessage);
+    }
+
+    private void NotifyFormValidated()
+    {
+        onMenuValidated.Publish();
     }
 
     private void NotifyUserJoinsRoom()
@@ -75,19 +81,19 @@ public class MainMenuUI : MonoBehaviour
     {
         if (userNameInputFieldValue.IsValueNullOrEmpty)
         {
-            NotifyErrorHappened(userNameEmptyErrorMessage);
+            NotifyFormError(userNameEmptyErrorMessage);
             ShowErrorTitle();
         }
         else
         {
             HideErrorTitle();
+            NotifyFormValidated();
             NotifyUserJoinsRoom();
         }
     }
 
     private void HideErrorTitle()
     {
-        NotifyErrorHappened("");
         errorTitle.gameObject.SetActive(false);
     }
     

@@ -7,7 +7,7 @@ using UnityEngine;
 public abstract class ErrorText : MonoBehaviour
 {
     [SerializeField]
-    private OnFormErrorHappened formErrorHappened = null;
+    private OnFormValidated formValidated = null;
 
     protected TMP_Text text;
     
@@ -35,24 +35,24 @@ public abstract class ErrorText : MonoBehaviour
 
     private void VerifySerializeFields()
     {
-        if (formErrorHappened is null)
+        if (formValidated is null)
         {
-            throw new NullReferenceException(nameof(formErrorHappened));
+            throw new NullReferenceException(nameof(formValidated));
         }
     }
 
     private void OnEnable()
     {
-        formErrorHappened.OnPublished += OnFormErrorHappened;
+        formValidated.OnPublished += OnFormValidated;
     }
 
     private void OnDisable()
     {
-        formErrorHappened.OnPublished -= OnFormErrorHappened;
+        formValidated.OnPublished -= OnFormValidated;
     }
 
-    private void OnFormErrorHappened()
+    private void OnFormValidated()
     {
-        text.text = formErrorHappened.ErrorMessage;
+        text.text = formValidated.HasAnErrorMessage ? formValidated.ErrorMessage : "";
     }
 }
