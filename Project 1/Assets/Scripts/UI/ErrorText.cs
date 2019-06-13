@@ -13,32 +13,7 @@ public abstract class ErrorText : MonoBehaviour
     
     private void Awake()
     {
-        GetComponents();
-        
-        VerifyComponents();
-        
-        VerifySerializeFields();
-    }
-
-    protected virtual void GetComponents()
-    {
         text = GetComponent<TMP_Text>();
-    }
-
-    protected virtual void VerifyComponents()
-    {
-        if (text is null)
-        {
-            throw new NullReferenceException(nameof(text));
-        }
-    }
-
-    private void VerifySerializeFields()
-    {
-        if (formValidated is null)
-        {
-            throw new NullReferenceException(nameof(formValidated));
-        }
     }
 
     private void OnEnable()

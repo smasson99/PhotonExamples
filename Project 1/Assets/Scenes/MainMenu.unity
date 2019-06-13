@@ -234,13 +234,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenuValidated: {fileID: 11400000, guid: a28ce5edd3488074abe810f9766a3e22, type: 2}
-  userNameInputFieldValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea,
+  userNameStringValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea,
     type: 2}
-  onUserJoinsRoom: {fileID: 11400000, guid: ef7a5d1bca532c448847358104721228, type: 2}
+  callbacks: {fileID: 1349441335}
   onJoinRoomButtonClicked: {fileID: 11400000, guid: 8197851f470946d4dbc715b2fa430b04,
     type: 2}
   userNameEmptyErrorMessage: Username empty, please enter something.
+  titleGameObject: {fileID: 1745322243}
+  usernameInputField: {fileID: 2077325840}
   errorTitle: {fileID: 2145336527}
+  connectButton: {fileID: 136204852}
 --- !u!1 &136204852
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +258,7 @@ GameObject:
   - component: {fileID: 136204855}
   - component: {fileID: 136204854}
   m_Layer: 5
-  m_Name: Button
+  m_Name: JoinTheRoomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1278,6 +1281,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335368980}
   m_CullTransparentMesh: 0
+--- !u!114 &1349441335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6288137039137718484, guid: 38561d90265647040933be7ba0973476,
+    type: 3}
+  m_PrefabInstance: {fileID: 6288137039850223583}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0d468a1d61e644b77ebac8dc45725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1617487025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,7 +1635,7 @@ GameObject:
   - component: {fileID: 2077325842}
   - component: {fileID: 2077325845}
   m_Layer: 5
-  m_Name: ProfileNameInputField
+  m_Name: UsernameInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1807,7 +1822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4be05319362a6ab4082c1adc186d8b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputFieldValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea, type: 2}
+  stringValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea, type: 2}
 --- !u!1 &2145336527
 GameObject:
   m_ObjectHideFlags: 0

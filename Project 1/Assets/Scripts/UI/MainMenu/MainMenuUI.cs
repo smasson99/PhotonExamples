@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MainMenuUI : MonoBehaviour
 {
@@ -9,10 +10,10 @@ public class MainMenuUI : MonoBehaviour
     private OnFormValidated onMenuValidated = null;
 
     [SerializeField]
-    private InputFieldValue userNameInputFieldValue = null;
+    private StringValue userNameStringValue = null;
 
     [SerializeField]
-    private OnUserJoinsRoom onUserJoinsRoom = null;
+    private MainMenuCallbacks callbacks = null;
 
     [SerializeField]
     private OnJoinRoomButtonClicked onJoinRoomButtonClicked = null;
@@ -21,30 +22,16 @@ public class MainMenuUI : MonoBehaviour
     private string userNameEmptyErrorMessage = DefaultUserNameEmptyErrorMessage;
 
     [SerializeField]
+    private GameObject titleGameObject = null;
+
+    [SerializeField]
+    private GameObject usernameInputField = null;
+
+    [SerializeField]
     private GameObject errorTitle = null;
 
-    private void Awake()
-    {
-        VerifySerializeFields();
-    }
-
-    private void VerifySerializeFields()
-    {
-        if (onMenuValidated is null)
-        {
-            throw new NullReferenceException(nameof(onMenuValidated));
-        }
-
-        if (onUserJoinsRoom is null)
-        {
-            throw new NullReferenceException(nameof(onUserJoinsRoom));
-        }
-
-        if (onJoinRoomButtonClicked is null)
-        {
-            throw new NullReferenceException(nameof(onJoinRoomButtonClicked));
-        }
-    }
+    [SerializeField]
+    private GameObject connectButton = null;
 
     private void Start()
     {
@@ -62,9 +49,9 @@ public class MainMenuUI : MonoBehaviour
         onMenuValidated.Publish();
     }
 
-    private void NotifyUserJoinsRoom()
+    private void JoinTheRoom()
     {
-        onUserJoinsRoom.Publish();
+        callbacks.Connect();
     }
 
     private void OnEnable()
@@ -79,16 +66,19 @@ public class MainMenuUI : MonoBehaviour
 
     private void OnJoinRoomButtonClicked()
     {
-        if (userNameInputFieldValue.IsValueNullOrEmpty)
+        if (userNameStringValue.IsValueNullOrEmpty)
         {
             NotifyFormError(userNameEmptyErrorMessage);
             ShowErrorTitle();
         }
         else
         {
+            HideTitle();
             HideErrorTitle();
+            HideUsernameInputField();
+            HideConnectButton();
             NotifyFormValidated();
-            NotifyUserJoinsRoom();
+            JoinTheRoom();
         }
     }
 
@@ -96,9 +86,24 @@ public class MainMenuUI : MonoBehaviour
     {
         errorTitle.gameObject.SetActive(false);
     }
-    
+
     private void ShowErrorTitle()
     {
         errorTitle.gameObject.SetActive(true);
+    }
+
+    private void HideConnectButton()
+    {
+        connectButton.SetActive(false);
+    }
+
+    private void HideUsernameInputField()
+    {
+        usernameInputField.SetActive(false);
+    }
+
+    private void HideTitle()
+    {
+        titleGameObject.SetActive(false);
     }
 }

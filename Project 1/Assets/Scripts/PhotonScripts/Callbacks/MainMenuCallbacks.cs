@@ -19,43 +19,8 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
     [SerializeField]
     private string onlineRoomName = DefaultOnlineRoomName;
 
-    [SerializeField]
-    private OnUserJoinsRoom onUserJoinsRoom = null;
-
     private bool isConnecting;
-
-    private void Awake()
-    {
-        VerifySerializeFields();
-    }
-
-    private void VerifySerializeFields()
-    {
-        if (onUserJoinsRoom is null)
-        {
-            throw new NullReferenceException(nameof(onUserJoinsRoom));
-        }
-    }
-
-    public override void OnEnable()
-    {
-        base.OnEnable();
-
-        onUserJoinsRoom.OnPublished += OnUserJoinsRoom;
-    }
-
-    public override void OnDisable()
-    {
-        base.OnDisable();
-
-        onUserJoinsRoom.OnPublished -= OnUserJoinsRoom;
-    }
-
-    private void OnUserJoinsRoom()
-    {
-        Connect();
-    }
-
+    
     public void Connect()
     {
         if (!isConnecting)
@@ -83,6 +48,7 @@ public class MainMenuCallbacks : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         isConnecting = false;
+        
         SceneManager.LoadScene(onlineRoomName);
     }
 }

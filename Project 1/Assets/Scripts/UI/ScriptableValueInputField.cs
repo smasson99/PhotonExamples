@@ -6,42 +6,18 @@ using UnityEngine.UI;
 public abstract class ScriptableValueInputField : MonoBehaviour
 {
     [SerializeField]
-    protected InputFieldValue inputFieldValue = null;
+    protected StringValue stringValue = null;
 
     protected TMP_InputField inputField;
     
     protected virtual void Awake()
     {
-        GetComponents();
-        
-        VerifySerializeFields();
-        VerifyComponents();
-    }
-
-    protected virtual void GetComponents()
-    {
         inputField = GetComponent<TMP_InputField>();
-    }
-
-    protected virtual void VerifySerializeFields()
-    {
-        if (inputFieldValue is null)
-        {
-            throw new NullReferenceException(nameof(inputFieldValue));
-        }
-    }
-
-    protected virtual void VerifyComponents()
-    {
-        if (inputField is null)
-        {
-            throw new NullReferenceException(nameof(inputFieldValue));
-        }
     }
 
     private void Start()
     {
-        inputFieldValue.Value = "";
+        stringValue.ResetValue();
     }
 
     protected virtual void OnEnable()
@@ -58,11 +34,11 @@ public abstract class ScriptableValueInputField : MonoBehaviour
 
     protected virtual void OnValueChanged(string value)
     {
-        inputFieldValue.Value = value;
+        stringValue.Value = value;
     }
 
     protected virtual void OnEndEdit(string value)
     {
-        inputFieldValue.Value = value;
+        stringValue.Value = value;
     }
 }

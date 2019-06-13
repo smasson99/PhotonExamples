@@ -14,7 +14,7 @@ public class ChatRoomCallbacks : MonoBehaviourPunCallbacks
     private OnLeaveRoomButtonClicked onLeaveRoomButtonClicked = null;
 
     [SerializeField]
-    private InputFieldValue pseudoNameValue;
+    private StringValue pseudoNameValue;
 
     private void Awake()
     {
