@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\smasson\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\smasson\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Project 1.1539835310.00" t="ExcludeRecursive" />
-    <e p="D:\Samuel Masson\UnityProjects\PhotonExamples\Project 1" t="IncludeRecursive">
+    <e p="C:\Users\smass\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\smass\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Project 1.-1574124573.00" t="ExcludeRecursive" />
+    <e p="C:\Users\smass\Desktop\PhotonExamples\Project 1" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -439,6 +439,9 @@
             </e>
           </e>
           <e p="UI" t="Include">
+            <e p="Chatbox" t="Include">
+              <e p="ChatboxInputField_TMP.cs" t="Include" />
+            </e>
             <e p="ErrorText.cs" t="Include" />
             <e p="MainMenu" t="Include">
               <e p="MainMenuErrorText.cs" t="Include" />
