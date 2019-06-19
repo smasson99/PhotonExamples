@@ -9,7 +9,7 @@ public class MainMenuUI : MonoBehaviour
     private OnFormErrorHappened onMenuErrorHappened = null;
 
     [SerializeField]
-    private InputFieldValue userNameInputFieldValue = null;
+    private StringValue userNameStringValue = null;
 
     [SerializeField]
     private OnUserJoinsRoom onUserJoinsRoom = null;
@@ -22,29 +22,6 @@ public class MainMenuUI : MonoBehaviour
 
     [SerializeField]
     private GameObject errorTitle = null;
-
-    private void Awake()
-    {
-        VerifySerializeFields();
-    }
-
-    private void VerifySerializeFields()
-    {
-        if (onMenuErrorHappened is null)
-        {
-            throw new NullReferenceException(nameof(onMenuErrorHappened));
-        }
-
-        if (onUserJoinsRoom is null)
-        {
-            throw new NullReferenceException(nameof(onUserJoinsRoom));
-        }
-
-        if (onJoinRoomButtonClicked is null)
-        {
-            throw new NullReferenceException(nameof(onJoinRoomButtonClicked));
-        }
-    }
 
     private void Start()
     {
@@ -73,7 +50,7 @@ public class MainMenuUI : MonoBehaviour
 
     private void OnJoinRoomButtonClicked()
     {
-        if (userNameInputFieldValue.IsValueNullOrEmpty)
+        if (userNameStringValue.IsValueNullOrEmpty)
         {
             NotifyErrorHappened(userNameEmptyErrorMessage);
             ShowErrorTitle();

@@ -436,10 +436,13 @@
               </e>
             </e>
             <e p="Values" t="Include">
-              <e p="InputFieldValue.cs" t="Include" />
+              <e p="StringValue.cs" t="Include" />
             </e>
           </e>
           <e p="UI" t="Include">
+            <e p="Chatbox" t="Include">
+              <e p="ChatboxInputField_TMP.cs" t="Include" />
+            </e>
             <e p="ErrorText.cs" t="Include" />
             <e p="MainMenu" t="Include">
               <e p="MainMenuErrorText.cs" t="Include" />

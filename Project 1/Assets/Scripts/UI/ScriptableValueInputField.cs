@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public abstract class ScriptableValueInputField : MonoBehaviour
 {
     [SerializeField]
-    protected InputFieldValue inputFieldValue = null;
+    protected StringValue stringValue = null;
 
     protected TMP_InputField inputField;
     
@@ -25,9 +25,9 @@ public abstract class ScriptableValueInputField : MonoBehaviour
 
     protected virtual void VerifySerializeFields()
     {
-        if (inputFieldValue is null)
+        if (stringValue is null)
         {
-            throw new NullReferenceException(nameof(inputFieldValue));
+            throw new NullReferenceException(nameof(stringValue));
         }
     }
 
@@ -35,7 +35,7 @@ public abstract class ScriptableValueInputField : MonoBehaviour
     {
         if (inputField is null)
         {
-            throw new NullReferenceException(nameof(inputFieldValue));
+            throw new NullReferenceException(nameof(stringValue));
         }
     }
 
@@ -53,11 +53,11 @@ public abstract class ScriptableValueInputField : MonoBehaviour
 
     protected virtual void OnValueChanged(string value)
     {
-        inputFieldValue.Value = value;
+        stringValue.Value = value;
     }
 
     protected virtual void OnEndEdit(string value)
     {
-        inputFieldValue.Value = value;
+        stringValue.Value = value;
     }
 }
