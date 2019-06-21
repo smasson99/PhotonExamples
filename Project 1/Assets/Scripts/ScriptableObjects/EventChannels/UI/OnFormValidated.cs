@@ -16,7 +16,7 @@ public class OnFormValidated : EventChannels.EventChannel
         base.Publish();
     }
 
-    public void Publish()
+    public new void Publish()
     {
         errorMessage = "";
         

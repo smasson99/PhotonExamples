@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 08e6c0ded44033e4d8cfef364d4e0498
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - usernameValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea, type: 2}
+  - chatboxInputFieldValue: {fileID: 11400000, guid: 15346d75437cba744b1227922a728f16,
+      type: 2}
+  - chatBoxText: {instanceID: 0}
+  - onChatBoxInputFieldUsed: {fileID: 11400000, guid: d7e0e33c84a67b84bbf182ba376bf69c,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

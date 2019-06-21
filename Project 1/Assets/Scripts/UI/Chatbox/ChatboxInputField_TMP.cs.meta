@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - usernameValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea, type: 2}
+  - onInputFieldUsed: {fileID: 11400000, guid: d7e0e33c84a67b84bbf182ba376bf69c, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
