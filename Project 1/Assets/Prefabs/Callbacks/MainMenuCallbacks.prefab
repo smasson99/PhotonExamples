@@ -43,8 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb0d468a1d61e644b77ebac8dc45725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usernameValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea, type: 2}
   maxAmountOfPlayersPeerRoom: 5
   onlineRoomName: ChatRoom
-  offlineRoomName: MainMenu
-  onJoinRoomButtonClicked: {fileID: 11400000, guid: 8197851f470946d4dbc715b2fa430b04,
-    type: 2}

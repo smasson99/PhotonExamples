@@ -1,4 +1,5 @@
 ﻿using System;
+using PhotonScripts.Callbacks;
 using UnityEngine;
 using UnityEngine.Events;
 

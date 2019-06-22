@@ -1,4 +1,5 @@
-﻿using ScriptableObjects.EventChannels.UI;
+﻿using Photon.Pun;
+using ScriptableObjects.EventChannels.UI;
 using TMPro;
 using UnityEngine;
 
@@ -8,10 +9,7 @@ namespace UI.Chatbox
     {
         private const string NewLine = "\n";
         private const string Space = " ";
-        
-        [SerializeField]
-        private StringValue usernameValue = null;
-        
+
         [SerializeField]
         private StringValue chatboxInputFieldValue = null;
 
@@ -21,7 +19,7 @@ namespace UI.Chatbox
         [SerializeField]
         private InputFieldUsed onChatBoxInputFieldUsed = null;
 
-        private string UserNameText => usernameValue.Value + " : ";
+        private string UserNameText => PhotonNetwork.LocalPlayer.NickName + " : ";
 
         private void Awake()
         {

@@ -57,4 +57,11 @@ public class ChatRoomCallbacks : MonoBehaviourPunCallbacks
     {
         SceneManager.LoadScene(offlineRoomName);
     }
+
+    public override void OnJoinedRoom()
+    {
+        base.OnJoinedRoom();
+        
+        Debug.Log("Joined the room!");
+    }
 }
