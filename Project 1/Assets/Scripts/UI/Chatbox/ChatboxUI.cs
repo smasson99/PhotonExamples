@@ -21,6 +21,8 @@ namespace UI.Chatbox
         [SerializeField]
         private InputFieldUsed onChatBoxInputFieldUsed = null;
 
+        private string UserNameText => usernameValue.Value + " : ";
+
         private void Awake()
         {
             chatboxInputFieldValue.ResetValue();
@@ -28,7 +30,7 @@ namespace UI.Chatbox
         
         private void AddLine(string contentString)
         {
-            chatBoxText.text += usernameValue.Value + Space + contentString + NewLine;
+            chatBoxText.text += UserNameText + Space + contentString + NewLine;
         }
 
         private void NotifyChatboxInputFieldUsed()
@@ -53,8 +55,11 @@ namespace UI.Chatbox
 
         private void SendMessage()
         {
-            AddLine(chatboxInputFieldValue.Value);
-            NotifyChatboxInputFieldUsed();
+            if (!chatboxInputFieldValue.IsValueNullOrEmpty)
+            {
+                AddLine(chatboxInputFieldValue.Value);
+                NotifyChatboxInputFieldUsed();
+            }
         }
     }
 }

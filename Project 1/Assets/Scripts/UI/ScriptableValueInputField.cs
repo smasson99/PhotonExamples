@@ -1,15 +1,19 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 public abstract class ScriptableValueInputField : MonoBehaviour
 {
-    [SerializeField]
-    protected StringValue stringValue = null;
-
     protected TMP_InputField inputField;
-    
+
+    public UnityEvent OnSubmitted;
+
+    [SerializeField]
+    protected bool selectOnSubmit;
+
+    [SerializeField]
+    protected StringValue stringValue;
+
     protected virtual void Awake()
     {
         inputField = GetComponent<TMP_InputField>();
@@ -24,12 +28,14 @@ public abstract class ScriptableValueInputField : MonoBehaviour
     {
         inputField.onValueChanged.AddListener(OnValueChanged);
         inputField.onEndEdit.AddListener(OnEndEdit);
+        inputField.onSubmit.AddListener(OnSubmit);
     }
-    
+
     protected virtual void OnDisable()
     {
         inputField.onValueChanged.RemoveListener(OnValueChanged);
         inputField.onEndEdit.RemoveListener(OnEndEdit);
+        inputField.onSubmit.RemoveListener(OnSubmit);
     }
 
     protected virtual void OnValueChanged(string value)
@@ -40,5 +46,18 @@ public abstract class ScriptableValueInputField : MonoBehaviour
     protected virtual void OnEndEdit(string value)
     {
         stringValue.Value = value;
+    }
+
+    protected virtual void OnSubmit(string value)
+    {
+        if (selectOnSubmit) 
+            inputField.ActivateInputField();
+
+        NotifySubmitted();
+    }
+
+    protected void NotifySubmitted()
+    {
+        OnSubmitted.Invoke();
     }
 }

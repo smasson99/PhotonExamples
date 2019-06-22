@@ -1822,6 +1822,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4be05319362a6ab4082c1adc186d8b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnSubmitted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 134471476}
+        m_MethodName: OnFormSubmitted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  selectOnSubmit: 1
   stringValue: {fileID: 11400000, guid: ad4ad2b460a33924e913aac9ba53a8ea, type: 2}
 --- !u!1 &2145336527
 GameObject:

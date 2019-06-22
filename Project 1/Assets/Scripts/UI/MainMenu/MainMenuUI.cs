@@ -66,6 +66,11 @@ public class MainMenuUI : MonoBehaviour
 
     private void OnJoinRoomButtonClicked()
     {
+        TryToEnterTheRoom();
+    }
+
+    private void TryToEnterTheRoom()
+    {
         if (userNameStringValue.IsValueNullOrEmpty)
         {
             NotifyFormError(userNameEmptyErrorMessage);
@@ -105,5 +110,10 @@ public class MainMenuUI : MonoBehaviour
     private void HideTitle()
     {
         titleGameObject.SetActive(false);
+    }
+
+    public void OnFormSubmitted()
+    {
+        TryToEnterTheRoom();
     }
 }
