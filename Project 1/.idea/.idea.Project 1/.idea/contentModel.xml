@@ -417,7 +417,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="PhotonScripts" t="Include">
+          <e p="Lobys" t="Include">
+            <e p="PhotonLobby.cs" t="Include" />
+          </e>
+          <e p="Photon" t="Include">
             <e p="Callbacks" t="Include">
               <e p="ChatRoomCallbacks.cs" t="Include" />
               <e p="MainMenuCallbacks.cs" t="Include" />

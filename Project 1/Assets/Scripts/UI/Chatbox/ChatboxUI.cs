@@ -1,11 +1,12 @@
-﻿using Photon.Pun;
+﻿using System;
+using Photon.Pun;
 using ScriptableObjects.EventChannels.UI;
 using TMPro;
 using UnityEngine;
 
 namespace UI.Chatbox
 {
-    public class ChatboxUI : MonoBehaviour
+    public class ChatboxUI : MonoBehaviourPun, IPunObservable
     {
         private const string NewLine = "\n";
         private const string Space = " ";
@@ -25,10 +26,21 @@ namespace UI.Chatbox
         {
             chatboxInputFieldValue.ResetValue();
         }
-        
-        private void AddLine(string contentString)
+
+        private void Start()
         {
-            chatBoxText.text += UserNameText + Space + contentString + NewLine;
+            AddLine(UserNameText, "Roomname : " + PhotonNetwork.CurrentRoom.Name);
+            AddLine(UserNameText, "NumberOfPlayers : " + PhotonNetwork.PlayerList.Length);
+            AddLine(UserNameText, "NumberOfPlayers in the room : " + PhotonNetwork.CountOfPlayersInRooms);
+            AddLine(UserNameText, "Full string room : " + PhotonNetwork.CurrentRoom.ToStringFull());
+            AddLine(UserNameText, "Number of rooms : " + PhotonNetwork.CountOfRooms);
+        }
+
+        [PunRPC]
+        private void AddLine(string usernameText, string message)
+        {
+            Debug.Log("AddlineCalled");
+            chatBoxText.text += usernameText + Space + message + NewLine;
         }
 
         private void NotifyChatboxInputFieldUsed()
@@ -55,8 +67,41 @@ namespace UI.Chatbox
         {
             if (!chatboxInputFieldValue.IsValueNullOrEmpty)
             {
-                AddLine(chatboxInputFieldValue.Value);
-                NotifyChatboxInputFieldUsed();
+                if (PhotonNetwork.IsConnected)
+                {
+                    Debug.Log("Online");
+                    AddALineForAllUsers();
+                }
+                else
+                {
+                    Debug.Log("Offline");
+                    SendOfflineMessage();
+                }
+            }
+        }
+
+        private void AddALineForAllUsers()
+        {
+            photonView.RPC(nameof(AddLine), RpcTarget.All, UserNameText, chatboxInputFieldValue.Value);
+
+            NotifyChatboxInputFieldUsed();
+        }
+
+        private void SendOfflineMessage()
+        {
+            AddLine(UserNameText, chatboxInputFieldValue.Value);
+            NotifyChatboxInputFieldUsed();
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                stream.SendNext(chatBoxText.text);
+            }
+            else if (stream.IsReading)
+            {
+                chatBoxText.text = stream.ReceiveNext().ToString();
             }
         }
     }
